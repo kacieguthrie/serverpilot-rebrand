@@ -1,0 +1,72 @@
+:root {
+  --primary: #3B51C3;
+  --secondary:#6BB9E5;
+  --secondary-wash: #F0F8FC;
+  --blue-3: #5D97DB;
+  --blue-4: #3D32C0;
+  --contrast: #BEF0D8;
+  --black: #343248;
+  --dark-gray:#6D6D6D;
+  --middle-gray:#B4B4B4;
+  --light-gray: #ECECEC;
+  --lightest-gray: #FAFAFA;
+  --box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, p, h6 {
+  color: var(--black);
+}
+
+h1 {
+  font-size: 44px;
+}
+
+h2 {
+  font-family: 'Sintony', sans-serif;
+  font-size: 28px;
+}
+
+h3 {
+  font-family: 'Sintony', sans-serif;
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+
+h6 {
+  font-family: 'Sintony', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* buttons */
+.btn {
+  border-radius: 2px;
+}
+
+.btn-primary {
+  background-color: var(--contrast);
+  color: var(--blue-4);
+  border: none;
+}
+
+.btn-lg {
+  font-size: 14px;
+  padding: 20px 30px;
+}
+
+.btn-sm {
+  font-size: 14px;
+  padding: 5px 20px;
+}
