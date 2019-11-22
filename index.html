@@ -7,210 +7,260 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom-styles.css">
+
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,500|Sintony:400,700&display=swap" rel="stylesheet">
     <title>Server Pilot - PHP and WordPress hosting on Digital Ocean</title>
   </head>
   <body>
     <!-- hero -->
-    <div class="">
+    <div class="hero container-fluid" style="background-color: var(--primary);">
       <!-- Header -->
-      <div class="">
-        <nav>
+      <div class="container pt-3">
+        <nav class="row nav justify-content-between">
           <a href="#">
-            <img src="" alt="serverpilot-logo">
+            <img src="assets/serverpilot-logo-horizontal-white.png" alt="serverpilot-logo" style="width: 175px">
           </a>
-          <div class="">
-            <a href="#">
-              <p>Features</p>
-            </a>
-            <a href="#">
-              <p>Pricing</p>
-            </a>
-            <a href="#">
-              <p>Documentation</p>
-            </a>
-            <a href="#">
-              <p>Login</p>
-            </a>
-            <a href="#">
-              <button type="button" name="button">Sign Up</button>
-            </a>
+          <div class="col-8">
+            <div class="row justify-content-end">
+              <li class="nav-item">
+                <a href="" class="nav-link">Features</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Documentation</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Login</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <button type="button" name="button" class="btn btn-light btn-sm text-blue-4">Sign Up</button>
+                </a>
+              </li>
+            <div/>
           </div>
         </nav>
       </div>
-      <div class="">
-        <h1>The best way to run WordPress and PHP sites</h1>
-        <h2>Automated server management for developers, agencies, and hosts</h2>
+      <div class="container pt-5 pb-5">
+        <h1 class="text-lightest-gray" style="font-size: 55px;">The best way to run WordPress and PHP sites</h1>
+        <h2 class="text-lightest-gray">Automated server management for developers, agencies, and hosts</h2>
         <a href="#">
-          <button type="button" name="button">Start My Free Trial</button>
+          <button type="button" name="button" class="btn btn-primary btn-lg bg-contrast">Start My Free Trial</button>
         </a>
       </div>
-      <div class="">
-        <div class="logo-group">
-          <!-- links to server provider logos -->
-        </div>
-        <div class="">
-          <h3>Use ServerPilot with any server provider</h3>
+      <div class="container-fluid bg-trans col align-self-end">
+        <div class="container pt-3 pb-3">
+          <div class="row">
+            <div class="col-8">
+              <img src="assets/digital-ocean-logo.png" alt="">
+              <img src="assets/rackspace-logo.png" alt="">
+              <img src="assets/linode-logo.png" alt="">
+              <img src="assets/google-cloud-logo.png" alt="">
+              <img src="assets/up-cloud-logo.png" alt="">
+              <img src="assets/aws-logo.png" alt="">
+            </div>
+            <div class="col-4 ">
+              <h3 class="text-lightest-gray">Use ServerPilot with any server provider</h3>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="">
-      <h2>Your business depends on your data and uptime</h2>
+    <div class="mt-5 mb-5">
+      <h2 class="text-center pt-5 mb-5">Your business depends on your data and uptime</h2>
       <!-- features group -->
-      <div class="">
-        <!-- feature card -->
-        <div class="">
-          <!-- card title -->
-          <div class="">
-            <img src="" alt="">
-            <h3>Control Panel & API</h3>
+      <div class="container">
+        <div class="row">
+          <!-- feature card -->
+          <div class="col-md mb-3">
+            <!-- card title -->
+            <div class="card border-left-0 border-right-0 border-bottom-0 border-head shadow">
+              <div class="card-body">
+                <div class="col align-items-center">
+                  <img src="assets/gear-icon.png" alt="icon">
+                  <h3>Control Panel & API</h3>
+                </div>
+                <p>Manage all servers and sites through a single control panel or automate using our API.</p>
+              </div>
+            </div>
           </div>
-          <p>Manage all servers and sites through a single control panel or automate using our API.</p>
-        </div>
-        <!-- feature card -->
-        <div class="">
-          <!-- card title -->
-          <div class="">
-            <img src="" alt="">
-            <h3>Secure by Design</h3>
+          <!-- feature card -->
+          <div class="col-md mb-3">
+            <!-- card title -->
+            <div class="card border-left-0 border-right-0 border-bottom-0 border-head shadow">
+              <div class="card-body">
+                <div class="">
+                  <img src="assets/shield-icon.png" alt="icon">
+                  <h3>Secure by Design</h3>
+                </div>
+                <p>Automated updates and firewalls. Secure architecture. Built by security researchers.</p>
+              </div>
+            </div>
           </div>
-          <p>Automated updates and firewalls. Secure architecture. Built by security researchers.</p>
-        </div>
-        <!-- feature card -->
-        <div class="">
-          <!-- card title -->
-          <div class="">
-            <img src="" alt="">
-            <h3>Expert Support</h3>
+          <!-- feature card -->
+
+          <div class="col-md">
+            <!-- card title -->
+            <div class="card border-left-0 border-right-0 border-bottom-0 border-head shadow">
+              <div class="card-body ">
+                <div class="card-title">
+                  <img src="assets/chat-icon.png" alt="icon">
+                  <h3>Expert Support</h3>
+                </div>
+                <p>All of our support staff are highly experienced sysadmins. Get real answers when you need them.</p>
+              </div>
+            </div>
           </div>
-          <p>All of our support staff are highly experienced sysadmins. Get real answers when you need them.</p>
         </div>
       </div>
     </div>
-    <div class="">
-      <div>
-        <blockquote>Switching to ServerPilot gave us a 10x speedup. Our developers love it.</blockquote>
-        <h6>James Hamilton, Resurva</h6>
+    <div class="container pt-5">
+      <div class="row justify-content-center">
+        <div class="col-8 card border-blue-4">
+          <div class="blockquote card-body">
+            <h4 class="quote text-blue-4">Switching to ServerPilot gave us a 10x speedup. Our developers love it.</h4>
+            <h6 class="blockquote-footer">James Hamilton, Resurva</h6>
+          </div>
+        </div>
       </div>
+    </div>
+    <div class="collage-block">
+
     </div>
     <!-- footer CTA -->
-    <div class="">
-      <h1>Launch your first site in 5 minutes</h1>
-      <div>
-        <a href="#">
-          <button type="button" name="button">Start My Free Trial</button>
-        </a>
-        <p>No credit card required</p>
-      </div>
-    </div>
-    <footer>
-      <div class="">
-        <img src="" alt="serverpilot-logo">
-        <p>Developed by LessBits</p>
-        <p>©LessBits 2020</p>
-        <div class="">
-          <img src="" alt="twitter">
-          <img src="" alt="facebook">
-          <!-- links to relevant LessBitsproducts -->
+    <div class="container-fluid pt-5 pb-5 footer-cta" style="background-color: var(--primary)">
+      <div class="container pt-5 pb-5">
+        <div class="row justify-content-center">
+          <div class="col-8">
+            <h1 class="text-lightest-gray">Launch your first site in <br>5 minutes</h1>
+          </div>
+          <div class="row align-items-center">
+            <div class="col mb-1">
+              <a href="#" class="">
+                <button type="button" name="button" class="btn btn-primary btn-lg bg-contrast">Start My Free Trial</button>
+              </a>
+              <p class="text-center text-lightest-gray">No credit card required</p>
+            </div>
+
+          </div>
         </div>
       </div>
-      <div class="">
-        <h4>Overview</h4>
-        <ul>
-          <a href="#">
-            <li>Pricing</li>
-          </a>
-          <a href="#">
-            <li>WordPress Hosting</li>
-          </a>
-          <a href="#">
-            <li>Magento Hosting</li>
-          </a>
-          <a href="#">
-            <li>Laravel Hosting</li><
-            /a>
-          <a href="#">
-            <li>PHP Hosting</li>
-          </a>
-          <a href="#">
-            <li>Terms / Privacy</li>
-          </a>
-          <a href="#">
-            <li>GDPR</li>
-          </a>
-        </ul>
-        <ul>
-          <a href="#">
-            <li>features</li>
-          </a>
-          <a href="#">
-            <li>About</li>
-          </a>
-          <a href="#">
-            <li>Blog</li><
-            /a>
-          <a href="#">
-            <li>Security</li>
-          </a>
-          <a href="#">
-            <li>API</li>
-          </a>
-          <a href="#">
-            <li>Auto SSL</li>
-          </a>
-        </ul>
-      </div>
-      <div class="">
-        <h4>Articles</h4>
-        <ul>
-          <a href="#">
-            <li>How ServerPilot Works</li>
-          </a>
-          <a href="#">
-            <li>Install WordPress on DigitalOcean</li>
-          </a>
-          <a href="#">
-            <li>DigitalOcean Control Panel</li>
-          </a>
-          <a href="#">
-            <li>cPanel Alternative</li>
-          </a>
-          <a href="#">
-            <li>Plesk Alternative</li>
-          </a>
-          <a href="#">
-            <li>HostGator Alternative</li>
-          </a>
-          <a href="#">
-            <li>Bitnami Alternative</li>
-          </a>
-        </ul>
-      </div>
-      <div class="">
-        <h4>Resources</h4>
-        <ul>
-          <a href="#">
-            <li>Documentation</li>
-          </a>
-          <a href="#">
-            <li>Sign Up</li>
-          </a>
-          <a href="#">
-            <li>Getting Started</li>
-          </a>
-          <a href="#">
-            <li>Referral Program</li>
-          </a>
-          <a href="#">
-            <li>Logos and Badges</li>
-          </a>
-        </ul>
-        <div>
-          <p>Questions?</p>
-          <a href="#">
-            <button type="button" name="button">Ask Support</button>
-          </a>
+    </div>
+    <footer class="container mt-5 mb-5 pb-5">
+      <div class="row">
+        <div class="col-lg-3">
+          <img src="assets/serverpilot-logo-horizontal-black.png" alt="serverpilot-logo" style="width: 175px;">
+          <p>Developed by LessBits</p>
+          <p>©LessBits 2020</p>
+          <div class="">
+            <img src="" alt="twitter">
+            <img src="" alt="facebook">
+            <!-- links to relevant LessBitsproducts -->
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <h4>Overview</h4>
+          <div class="row pl-3">
+            <ul class="pr-5">
+              <a href="#">
+                <li>Pricing</li>
+              </a>
+              <a href="#">
+                <li>WordPress Hosting</li>
+              </a>
+              <a href="#">
+                <li>Magento Hosting</li>
+              </a>
+              <a href="#">
+                <li>Laravel Hosting</li>
+              </a>
+              <a href="#">
+                <li>PHP Hosting</li>
+              </a>
+              <a href="#">
+                <li>Terms / Privacy</li>
+              </a>
+              <a href="#">
+                <li>GDPR</li>
+              </a>
+            </ul>
+            <ul>
+              <a href="#">
+                <li>Features</li>
+              </a>
+              <a href="#">
+                <li>About</li>
+              </a>
+              <a href="#">
+                <li>Blog</li>
+              </a>
+              <a href="#">
+                <li>Security</li>
+              </a>
+              <a href="#">
+                <li>API</li>
+              </a>
+              <a href="#">
+                <li>Auto SSL</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <h4>Articles</h4>
+          <ul>
+            <a href="#">
+              <li>How ServerPilot Works</li>
+            </a>
+            <a href="#">
+              <li>Install WordPress on DigitalOcean</li>
+            </a>
+            <a href="#">
+              <li>DigitalOcean Control Panel</li>
+            </a>
+            <a href="#">
+              <li>cPanel Alternative</li>
+            </a>
+            <a href="#">
+              <li>Plesk Alternative</li>
+            </a>
+            <a href="#">
+              <li>HostGator Alternative</li>
+            </a>
+            <a href="#">
+              <li>Bitnami Alternative</li>
+            </a>
+          </ul>
+        </div>
+        <div class="col-lg-2">
+          <h4>Resources</h4>
+          <ul>
+            <a href="#">
+              <li>Documentation</li>
+            </a>
+            <a href="#">
+              <li>Sign Up</li>
+            </a>
+            <a href="#">
+              <li>Getting Started</li>
+            </a>
+            <a href="#">
+              <li>Referral Program</li>
+            </a>
+            <a href="#">
+              <li>Logos and Badges</li>
+            </a>
+          </ul>
+          <div>
+            <p class="pb-2" style="border-bottom: 1px solid var(--secondary);">Questions?</p>
+            <a href="#">
+              <button type="button" name="button" class="btn btn-sm bg-blue-4 text-light">Ask Support</button>
+            </a>
+          </div>
         </div>
       </div>
     </footer>

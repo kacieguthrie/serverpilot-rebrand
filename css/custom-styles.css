@@ -15,39 +15,87 @@
 
 body {
   font-family: 'Rubik', sans-serif;
-  font-weight: 400;
+
 }
 
 h1, h2, h3, h4, p, h6 {
   color: var(--black);
+  font-weight: 400;
 }
 
 h1 {
-  font-size: 44px;
+  /* font-size: 44px; */
 }
 
 h2 {
   font-family: 'Sintony', sans-serif;
-  font-size: 28px;
+  /* font-size: 28px; */
+  font-weight: 400;
 }
 
 h3 {
   font-family: 'Sintony', sans-serif;
-  font-size: 20px;
+  /* font-size: 20px; */
 }
 
 h4 {
-  font-size: 20px;
+  /* font-size: 20px; */
 }
 
 p {
-  font-size: 16px;
+  /* font-size: 16px; */
 }
 
 h6 {
   font-family: 'Sintony', sans-serif;
-  font-size: 20px;
-  font-weight: 700;
+  /* font-size: 20px; */
+}
+
+.nav-link {
+  color: var(--lightest-gray);
+}
+
+.nav-link:hover {
+  color: var(--blue-4);
+}
+
+/* colors */
+.text-primary {
+  color: var(--primary);
+}
+
+.text-blue-4 {
+  color: var(--blue-4);
+}
+
+.text-lightest-gray {
+  color: var(--lightest-gray);
+}
+
+.bg-contrast {
+  background-color: var(--contrast);
+  color: var(--blue-4);
+}
+
+.bg-blue-4 {
+  background-color: var(--blue-4);
+}
+
+.bg-trans {
+  background-color: rgba(244, 244, 248, 0.15);
+}
+
+/* borders and shadows */
+.card, .btn, .form-control {
+  border-radius: 3px;
+}
+
+.border-head {
+  border-top: solid var(--primary) 6px;
+}
+
+.border-primary {
+  border: solid var(--primary) .5px;
 }
 
 /* buttons */
@@ -56,8 +104,6 @@ h6 {
 }
 
 .btn-primary {
-  background-color: var(--contrast);
-  color: var(--blue-4);
   border: none;
 }
 
@@ -69,4 +115,50 @@ h6 {
 .btn-sm {
   font-size: 14px;
   padding: 5px 20px;
+}
+
+/* cards */
+.blockquote {
+  margin: 2rem;
+}
+
+.blockquote .quote:before {
+  content:'"';
+  white-space: pre;
+  font-size: 40px;
+}
+
+.blockquote-footer {
+  text-align: right;
+}
+
+.collage-block {
+  background-color: var(--secondary-wash);
+  height: 20vh;
+  margin-top: -10vh;
+}
+
+/* lists */
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding-left: 0;
+}
+
+a li {
+  color: var(--dark-gray);
+}
+
+
+/* weird stuff */
+.footer-cta {
+  background: url(../assets/bg-waves.png) no-repeat bottom;
+  height: auto;
+}
+
+.hero {
+  height: 90vh;
+  background: url(../assets/hero-image.png) no-repeat top center fixed;
 }
